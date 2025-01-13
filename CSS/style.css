@@ -1,0 +1,605 @@
+:root {
+    --white: #FFF;
+    --blue: #20295C;
+    --blue-icon: #2D8DBC;
+    --orange: #F26F22;
+    --yellow: #FCB514;
+    --text-primary: #171717;
+    --text-dark: #4E4953;
+    --text-light: #A6A4A9;
+    --input-bg: #2B679F;
+    --facebook: #4267B2;
+    --twitter: #03A9F4;
+    --instagram: #912969;
+    --linkedin: #007BB6;
+    --youtube: #C03741;
+    --root-font: 16px;
+    --font-regular: 16px;
+    --font-small: 13px;
+    --font-extrasmall: 12px;
+    --primary-heading: 68px;
+    --secondary-heading: 40px;
+    --section-header: 24px;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --large-spacing: 100px;
+    --medium-spacing: 60px;
+    --small-spacing: 40px;
+}
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid transparent;
+    -webkit-text-fill-color: var(--text-dark);
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    font-size: var(--root-font);
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    color: var(--text-dark);
+}
+
+html:lang(ar) body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo';
+    letter-spacing: 0;
+}
+a {
+    color: var(--text-dark);
+    border-bottom: none;
+}
+a:hover,
+a:focus {
+    color: var(--text-dark);
+    text-decoration: none;
+    border-bottom: none;
+}
+a:focus, *:focus { outline: none; }
+b,strong { font-weight: var(--font-weight-bold); }
+ul,ol,
+.text-formatted ul,
+.text-formatted ol {
+    margin: 0;
+    padding: 0;
+}
+.text-blue { color: var(--blue) !important; }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    line-height: 1.3;
+    font-weight: var(--font-weight-bold);
+}
+h5, h6 {
+    text-transform: none;
+    letter-spacing: inherit;
+    margin: 0;
+}
+p {
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+.error {
+    margin-top: 3px;
+    font-size: 13px;
+    color: #e40b0b;
+}
+.required { color: red; }
+.fix-height {
+    position: relative;
+    height: var(--large-spacing);
+}
+.paddingleft { padding-left: 7px; }
+.paddingright { padding-right: 7px; }
+.hide-product { display: none; }
+.btn:focus,
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+.btn-theme {
+    padding: 6px 15px;
+    font-size: var(--font-regular);
+    font-weight: var(--font-weight-semibold);
+    color: var(--white);
+    background: var(--orange);
+    border: 2px solid var(--orange);
+}
+.btn-theme:hover,
+.btn-theme:focus {
+    color: var(--white);
+    background: var(--orange);
+    border: 2px solid var(--orange);
+}
+.btn-theme-bordered {
+    padding: 6px 15px;
+    font-size: var(--font-regular);
+    font-weight: var(--font-weight-semibold);
+    color: var(--orange);
+    background: transparent;
+    border: 2px solid var(--orange);
+}
+.btn-theme-bordered:hover,
+.btn-theme-bordered:focus {
+    color: var(--white);
+    background: var(--orange);
+    border: 2px solid var(--orange);
+}
+.btn-white {
+    padding: 6px 15px;
+    font-size: var(--font-regular);
+    font-weight: var(--font-weight-semibold);
+    color: var(--orange);
+    background: var(--white);
+    border: 2px solid var(--white);
+}
+.btn-white:hover,
+.btn-white:focus {
+    color: var(--orange);
+    background: var(--white);
+    border: 2px solid var(--white);
+}
+.iti-mobile .iti--container {
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    position: fixed;
+    width: calc(100% - 40px);
+}
+.container {
+    position: relative;
+    z-index: 1;
+}
+input:focus,
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.interactive-map img.pattern4 {
+	position: absolute;
+    top: 40px;
+    left: 0;
+    width: 160px;
+}
+@media (max-width: 1399px) {
+	.interactive-map img.pattern4{
+		top: 30px;
+		width: 120px;
+	}
+}
+@media (max-width: 991px) {
+	.interactive-map img.pattern4{
+		display: none;
+	}
+}
+.interactive-map { 
+    padding-top: var(--large-spacing);  
+    position: relative;
+}
+.interactive-map.home-spacing { padding-top: var(--large-spacing); }
+.interactive-map .interactive-map-content {
+    background: #F9F9F9;
+    padding: 60px 0;
+}
+.interactive-map .interactive-map-content #africa:hover #angola,
+.interactive-map .interactive-map-content #africa:hover #benin,
+.interactive-map .interactive-map-content #africa:hover #burkina-faso,
+.interactive-map .interactive-map-content #africa:hover #central-african,
+.interactive-map .interactive-map-content #africa:hover #cote-dIvoire,
+.interactive-map .interactive-map-content #africa:hover #cameroon,
+.interactive-map .interactive-map-content #africa:hover #dem-congo,
+.interactive-map .interactive-map-content #africa:hover #algeria,
+.interactive-map .interactive-map-content #africa:hover #egypt,
+.interactive-map .interactive-map-content #africa:hover #ethiopia,
+.interactive-map .interactive-map-content #africa:hover #gabon,
+.interactive-map .interactive-map-content #africa:hover #ghana,
+.interactive-map .interactive-map-content #africa:hover #guinea,
+.interactive-map .interactive-map-content #africa:hover #kenya,
+.interactive-map .interactive-map-content #africa:hover #liberia,
+.interactive-map .interactive-map-content #africa:hover #libya,
+.interactive-map .interactive-map-content #africa:hover #morocco,
+.interactive-map .interactive-map-content #africa:hover #madagascar,
+.interactive-map .interactive-map-content #africa:hover #mali,
+.interactive-map .interactive-map-content #africa:hover #mauritania,
+.interactive-map .interactive-map-content #africa:hover #namibia,
+.interactive-map .interactive-map-content #africa:hover #niger,
+.interactive-map .interactive-map-content #africa:hover #nigeria,
+.interactive-map .interactive-map-content #africa:hover #sudan,
+.interactive-map .interactive-map-content #africa:hover #senegal,
+.interactive-map .interactive-map-content #africa:hover #sierra-leone,
+.interactive-map .interactive-map-content #africa:hover #chad,
+.interactive-map .interactive-map-content #africa:hover #tunisia,
+.interactive-map .interactive-map-content #africa:hover #tanzania,
+.interactive-map .interactive-map-content #africa:hover #south-africa,
+.interactive-map .interactive-map-content #africa:hover #somalia,
+.interactive-map .interactive-map-content #africa:hover #botswana,
+.interactive-map .interactive-map-content #africa:hover #ssudan,
+.interactive-map .interactive-map-content #africa:hover #uganda,
+.interactive-map .interactive-map-content #africa:hover #zambia,
+.interactive-map .interactive-map-content #africa:hover #mozambique,
+.interactive-map .interactive-map-content #africa:hover #zimbabwe,
+.interactive-map .interactive-map-content #africa:hover #congo,
+.interactive-map .interactive-map-content #africa:hover #djibouti,
+.interactive-map .interactive-map-content #africa:hover #eritrea,
+.interactive-map .interactive-map-content #africa:hover #gambia,
+.interactive-map .interactive-map-content #africa:hover #guinea-bissau,
+.interactive-map .interactive-map-content #africa:hover #guinea,
+.interactive-map .interactive-map-content #africa:hover #lesotho,
+.interactive-map .interactive-map-content #africa:hover #malawi,
+.interactive-map .interactive-map-content #africa:hover #wsahara,
+.interactive-map .interactive-map-content #africa:hover #swaziland,
+.interactive-map .interactive-map-content #africa:hover #togo,
+.interactive-map .interactive-map-content #africa.active #angola,
+.interactive-map .interactive-map-content #africa.active #benin,
+.interactive-map .interactive-map-content #africa.active #burkina-faso,
+.interactive-map .interactive-map-content #africa.active #central-african,
+.interactive-map .interactive-map-content #africa.active #cote-dIvoire,
+.interactive-map .interactive-map-content #africa.active #cameroon,
+.interactive-map .interactive-map-content #africa.active #dem-congo,
+.interactive-map .interactive-map-content #africa.active #algeria,
+.interactive-map .interactive-map-content #africa.active #egypt,
+.interactive-map .interactive-map-content #africa.active #ethiopia,
+.interactive-map .interactive-map-content #africa.active #gabon,
+.interactive-map .interactive-map-content #africa.active #ghana,
+.interactive-map .interactive-map-content #africa.active #guinea,
+.interactive-map .interactive-map-content #africa.active #kenya,
+.interactive-map .interactive-map-content #africa.active #liberia,
+.interactive-map .interactive-map-content #africa.active #libya,
+.interactive-map .interactive-map-content #africa.active #morocco,
+.interactive-map .interactive-map-content #africa.active #madagascar,
+.interactive-map .interactive-map-content #africa.active #mali,
+.interactive-map .interactive-map-content #africa.active #mauritania,
+.interactive-map .interactive-map-content #africa.active #namibia,
+.interactive-map .interactive-map-content #africa.active #niger,
+.interactive-map .interactive-map-content #africa.active #nigeria,
+.interactive-map .interactive-map-content #africa.active #sudan,
+.interactive-map .interactive-map-content #africa.active #senegal,
+.interactive-map .interactive-map-content #africa.active #sierra-leone,
+.interactive-map .interactive-map-content #africa.active #chad,
+.interactive-map .interactive-map-content #africa.active #tunisia,
+.interactive-map .interactive-map-content #africa.active #tanzania,
+.interactive-map .interactive-map-content #africa.active #south-africa,
+.interactive-map .interactive-map-content #africa.active #somalia,
+.interactive-map .interactive-map-content #africa.active #botswana,
+.interactive-map .interactive-map-content #africa.active #ssudan,
+.interactive-map .interactive-map-content #africa.active #uganda,
+.interactive-map .interactive-map-content #africa.active #zambia,
+.interactive-map .interactive-map-content #africa.active #mozambique,
+.interactive-map .interactive-map-content #africa.active #zimbabwe,
+.interactive-map .interactive-map-content #africa.active #congo,
+.interactive-map .interactive-map-content #africa.active #djibouti,
+.interactive-map .interactive-map-content #africa.active #eritrea,
+.interactive-map .interactive-map-content #africa.active #gambia,
+.interactive-map .interactive-map-content #africa.active #guinea-bissau,
+.interactive-map .interactive-map-content #africa.active #guinea,
+.interactive-map .interactive-map-content #africa.active #lesotho,
+.interactive-map .interactive-map-content #africa.active #malawi,
+.interactive-map .interactive-map-content #africa.active #wsahara,
+.interactive-map .interactive-map-content #africa.active #swaziland,
+.interactive-map .interactive-map-content #africa.active #togo {
+    fill: #2D8DBC !important;
+}
+.interactive-map .interactive-map-content #america:hover #united-states,
+.interactive-map .interactive-map-content #america:hover #mexico,
+.interactive-map .interactive-map-content #america:hover #canada,
+.interactive-map .interactive-map-content #america:hover #argentina,
+.interactive-map .interactive-map-content #america:hover #bolivia,
+.interactive-map .interactive-map-content #america:hover #brazil,
+.interactive-map .interactive-map-content #america:hover #chile,
+.interactive-map .interactive-map-content #america:hover #colombia,
+.interactive-map .interactive-map-content #america:hover #ecuador,
+.interactive-map .interactive-map-content #america:hover #guyana,
+.interactive-map .interactive-map-content #america:hover #peru,
+.interactive-map .interactive-map-content #america:hover #paraguay,
+.interactive-map .interactive-map-content #america:hover #suriname,
+.interactive-map .interactive-map-content #america:hover #uruguay,
+.interactive-map .interactive-map-content #america:hover #venezuela,
+.interactive-map .interactive-map-content #america:hover #french-guiana,
+.interactive-map .interactive-map-content #america:hover #costa-rica,
+.interactive-map .interactive-map-content #america:hover #cuba,
+.interactive-map .interactive-map-content #america:hover #dominican,
+.interactive-map .interactive-map-content #america:hover #guatemala,
+.interactive-map .interactive-map-content #america:hover #honduras,
+.interactive-map .interactive-map-content #america:hover #haiti,
+.interactive-map .interactive-map-content #america:hover #jamaica,
+.interactive-map .interactive-map-content #america:hover #nicaragua,
+.interactive-map .interactive-map-content #america:hover #panama,
+.interactive-map .interactive-map-content #america:hover #el-salvador,
+.interactive-map .interactive-map-content #america:hover #bahamas,
+.interactive-map .interactive-map-content #america.active #united-states,
+.interactive-map .interactive-map-content #america.active #mexico,
+.interactive-map .interactive-map-content #america.active #canada,
+.interactive-map .interactive-map-content #america.active #argentina,
+.interactive-map .interactive-map-content #america.active #bolivia,
+.interactive-map .interactive-map-content #america.active #brazil,
+.interactive-map .interactive-map-content #america.active #chile,
+.interactive-map .interactive-map-content #america.active #colombia,
+.interactive-map .interactive-map-content #america.active #ecuador,
+.interactive-map .interactive-map-content #america.active #guyana,
+.interactive-map .interactive-map-content #america.active #peru,
+.interactive-map .interactive-map-content #america.active #paraguay,
+.interactive-map .interactive-map-content #america.active #suriname,
+.interactive-map .interactive-map-content #america.active #uruguay,
+.interactive-map .interactive-map-content #america.active #venezuela,
+.interactive-map .interactive-map-content #america.active #french-guiana,
+.interactive-map .interactive-map-content #america.active #costa-rica,
+.interactive-map .interactive-map-content #america.active #cuba,
+.interactive-map .interactive-map-content #america.active #dominican,
+.interactive-map .interactive-map-content #america.active #guatemala,
+.interactive-map .interactive-map-content #america.active #honduras,
+.interactive-map .interactive-map-content #america.active #haiti,
+.interactive-map .interactive-map-content #america.active #jamaica,
+.interactive-map .interactive-map-content #america.active #nicaragua,
+.interactive-map .interactive-map-content #america.active #panama,
+.interactive-map .interactive-map-content #america.active #el-salvador,
+.interactive-map .interactive-map-content #america.active #bahamas {
+    fill: #2D8DBC !important;
+}
+.interactive-map .interactive-map-content #asia:hover #afghanistan,
+.interactive-map .interactive-map-content #asia:hover #china,
+.interactive-map .interactive-map-content #asia:hover #india,
+.interactive-map .interactive-map-content #asia:hover #japan,
+.interactive-map .interactive-map-content #asia:hover #korea,
+.interactive-map .interactive-map-content #asia:hover #pakistan,
+.interactive-map .interactive-map-content #asia:hover #thailand,
+.interactive-map .interactive-map-content #asia:hover #vietnam,
+.interactive-map .interactive-map-content #asia.active #afghanistan,
+.interactive-map .interactive-map-content #asia.active #china,
+.interactive-map .interactive-map-content #asia.active #india,
+.interactive-map .interactive-map-content #asia.active #japan,
+.interactive-map .interactive-map-content #asia.active #korea,
+.interactive-map .interactive-map-content #asia.active #pakistan,
+.interactive-map .interactive-map-content #asia.active #thailand,
+.interactive-map .interactive-map-content #asia.active #vietnam {
+    fill: #2D8DBC !important;
+}
+.interactive-map .interactive-map-content #europe:hover #azerbaijan,
+.interactive-map .interactive-map-content #europe:hover #russia,
+.interactive-map .interactive-map-content #europe:hover #turkey,
+.interactive-map .interactive-map-content #europe:hover #germany,
+.interactive-map .interactive-map-content #europe:hover #france,
+.interactive-map .interactive-map-content #europe:hover #azerbaijan,
+.interactive-map .interactive-map-content #europe:hover #turkey,
+.interactive-map .interactive-map-content #europe:hover #france,
+.interactive-map .interactive-map-content #europe:hover #albania,
+.interactive-map .interactive-map-content #europe:hover #austria,
+.interactive-map .interactive-map-content #europe:hover #bulgaria,
+.interactive-map .interactive-map-content #europe:hover #bosnia-herz,
+.interactive-map .interactive-map-content #europe:hover #belarus,
+.interactive-map .interactive-map-content #europe:hover #czech-rep,
+.interactive-map .interactive-map-content #europe:hover #denmark,
+.interactive-map .interactive-map-content #europe:hover #finland,
+.interactive-map .interactive-map-content #europe:hover #greece,
+.interactive-map .interactive-map-content #europe:hover #ireland,
+.interactive-map .interactive-map-content #europe:hover #italy,
+.interactive-map .interactive-map-content #europe:hover #lithuania,
+.interactive-map .interactive-map-content #europe:hover #latvia,
+.interactive-map .interactive-map-content #europe:hover #moldova,
+.interactive-map .interactive-map-content #europe:hover #macedonia,
+.interactive-map .interactive-map-content #europe:hover #montenegro,
+.interactive-map .interactive-map-content #europe:hover #norway,
+.interactive-map .interactive-map-content #europe:hover #poland,
+.interactive-map .interactive-map-content #europe:hover #romania,
+.interactive-map .interactive-map-content #europe:hover #serbia,
+.interactive-map .interactive-map-content #europe:hover #slovakia,
+.interactive-map .interactive-map-content #europe:hover #sweden,
+.interactive-map .interactive-map-content #europe:hover #ukraine,
+.interactive-map .interactive-map-content #europe:hover #russia,
+.interactive-map .interactive-map-content #europe:hover #germany,
+.interactive-map .interactive-map-content #europe:hover #belgium,
+.interactive-map .interactive-map-content #europe:hover #switzerland,
+.interactive-map .interactive-map-content #europe:hover #estonia,
+.interactive-map .interactive-map-content #europe:hover #united-kingdom,
+.interactive-map .interactive-map-content #europe:hover #croatia,
+.interactive-map .interactive-map-content #europe:hover #hungary,
+.interactive-map .interactive-map-content #europe:hover #luxembourg,
+.interactive-map .interactive-map-content #europe:hover #netherlands,
+.interactive-map .interactive-map-content #europe.active #azerbaijan,
+.interactive-map .interactive-map-content #europe.active #turkey,
+.interactive-map .interactive-map-content #europe.active #france,
+.interactive-map .interactive-map-content #europe.active #albania,
+.interactive-map .interactive-map-content #europe.active #austria,
+.interactive-map .interactive-map-content #europe.active #bulgaria,
+.interactive-map .interactive-map-content #europe.active #bosnia-herz,
+.interactive-map .interactive-map-content #europe.active #belarus,
+.interactive-map .interactive-map-content #europe.active #czech-rep,
+.interactive-map .interactive-map-content #europe.active #denmark,
+.interactive-map .interactive-map-content #europe.active #finland,
+.interactive-map .interactive-map-content #europe.active #greece,
+.interactive-map .interactive-map-content #europe.active #ireland,
+.interactive-map .interactive-map-content #europe.active #italy,
+.interactive-map .interactive-map-content #europe.active #lithuania,
+.interactive-map .interactive-map-content #europe.active #latvia,
+.interactive-map .interactive-map-content #europe.active #moldova,
+.interactive-map .interactive-map-content #europe.active #macedonia,
+.interactive-map .interactive-map-content #europe.active #montenegro,
+.interactive-map .interactive-map-content #europe.active #norway,
+.interactive-map .interactive-map-content #europe.active #poland,
+.interactive-map .interactive-map-content #europe.active #romania,
+.interactive-map .interactive-map-content #europe.active #serbia,
+.interactive-map .interactive-map-content #europe.active #slovakia,
+.interactive-map .interactive-map-content #europe.active #sweden,
+.interactive-map .interactive-map-content #europe.active #ukraine,
+.interactive-map .interactive-map-content #europe.active #russia,
+.interactive-map .interactive-map-content #europe.active #germany,
+.interactive-map .interactive-map-content #europe.active #belgium,
+.interactive-map .interactive-map-content #europe.active #switzerland,
+.interactive-map .interactive-map-content #europe.active #estonia,
+.interactive-map .interactive-map-content #europe.active #united-kingdom,
+.interactive-map .interactive-map-content #europe.active #croatia,
+.interactive-map .interactive-map-content #europe.active #hungary,
+.interactive-map .interactive-map-content #europe.active #luxembourg,
+.interactive-map .interactive-map-content #europe.active #netherlands {
+    fill: #2D8DBC !important;
+}
+.interactive-map .interactive-map-content #middleeast:hover #united-arab-emirates,
+.interactive-map .interactive-map-content #middleeast:hover #iran,
+.interactive-map .interactive-map-content #middleeast:hover #kuwait,
+.interactive-map .interactive-map-content #middleeast:hover #syria,
+.interactive-map .interactive-map-content #middleeast:hover #yemen,
+.interactive-map .interactive-map-content #middleeast:hover #lebanon,
+.interactive-map .interactive-map-content #middleeast:hover #jordan,
+.interactive-map .interactive-map-content #middleeast:hover #saudi-arabia,
+.interactive-map .interactive-map-content #middleeast:hover #oman,
+.interactive-map .interactive-map-content #middleeast:hover #iraq,
+.interactive-map .interactive-map-content #middleeast.active #united-arab-emirates,
+.interactive-map .interactive-map-content #middleeast.active #iran,
+.interactive-map .interactive-map-content #middleeast.active #kuwait,
+.interactive-map .interactive-map-content #middleeast.active #syria,
+.interactive-map .interactive-map-content #middleeast.active #yemen,
+.interactive-map .interactive-map-content #middleeast.active #lebanon,
+.interactive-map .interactive-map-content #middleeast.active #jordan,
+.interactive-map .interactive-map-content #middleeast.active #saudi-arabia,
+.interactive-map .interactive-map-content #middleeast.active #oman,
+.interactive-map .interactive-map-content #middleeast.active #iraq {
+    fill: #2D8DBC !important;
+}
+.interactive-map .interactive-map-content .pavilion-list {
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+}
+.interactive-map .interactive-map-content .pavilion-list ul {
+    /* width: 90%; */
+    margin: 0 auto;
+}
+.interactive-map .interactive-map-content .pavilion-list ul .slick-track {
+    margin-left: auto;
+    margin-right: auto;
+}
+.interactive-map .interactive-map-content .pavilion-list ul li {
+    display: block;
+    text-align: center;
+    width: 20%;
+}
+.interactive-map .interactive-map-content .pavilion-list ul li a {
+    display: block;
+    color: var(--orange);
+}
+.interactive-map .interactive-map-content .pavilion-list ul li a .image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.interactive-map .interactive-map-content .pavilion-list ul li a .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.interactive-map .interactive-map-content .pavilion-list ul li a p {
+    margin-top: 12px;
+    font-size: var(--root-font);
+    font-weight: var(--font-weight-semibold);
+    line-height: 18px;
+}
+.interactive-map .interactive-map-content .pavilion-list .slick-prev,
+.interactive-map .interactive-map-content .pavilion-list .slick-next {
+    top: 7px;
+    transform: none;
+    color: var(--white);
+    background: var(--orange);
+    box-shadow: none;
+}
+.interactive-map .interactive-map-content .pavilion-list .slick-prev { left: -70px; }
+.interactive-map .interactive-map-content .pavilion-list .slick-next { right: -70px; }
+.interactive-map .interactive-map-content .pavilion-list:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 28px;
+    left: 0;
+    background: rgba(78, 73, 83, 0.1);
+}
+.interactive-map span {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.interactive-map .pavilion-list .slider{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  /* background-color: red; */
+}
+.interactive-map .pavilion-list .slider li{
+  margin: 0px auto;
+}
+.interactive-map .pavilion-list .swiperMiddle{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+.interactive-map .pavilion-list .swiperAsia{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+.interactive-map .pavilion-list .swiper-button{
+  top: 50%;
+  transform: none;
+  color: var(--white);
+  background: #f26f22;
+  box-shadow: none;
+  width: 3%;
+  /* height: 40%; */
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  transform: translateY(-85%);
+  -webkit-transform: translateY(-85%);
+  -moz-transform: translateY(-85%);
+  -ms-transform: translateY(-85%);
+  -o-transform: translateY(-85%);
+}
+.interactive-map .pavilion-list .swiper-button-prev{
+  left: 0px;
+  z-index: 100;
+}
+.interactive-map .pavilion-list .swiper-button-next{
+  right: 0px;
+}
+.interactive-map .pavilion-list .swiper-button::after{
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  font-weight: 900;
+}
