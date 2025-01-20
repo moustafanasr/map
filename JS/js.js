@@ -75,6 +75,7 @@ function showSlider(target, sliderToShow) {
   const sliderElement = document.querySelector(sliderToShow);
   if (sliderElement) {
     sliderElement.style.display = "block";
+    sliderElement.classList.add("active"); // Corrected this line
 
     // Update the corresponding Swiper instance
     if (sliderToShow === ".asia-slider") {
