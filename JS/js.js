@@ -1,58 +1,64 @@
-// Initialize Swiper instances dynamically
+// Swiper instances
 let swiperMiddle, swiperAsia;
 
+// Function to initialize Swiper for Middle East
 function initializeSwiperMiddle() {
-  if (!swiperMiddle) {
-    swiperMiddle = new Swiper('.swiperMiddle', {
-      direction: 'horizontal',
-      slidesPerView: 5,
-      loop: true,
-      speed: 1000,
-      slidesPerGroup: 1,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: true,
-      },
-      navigation: {
-        nextEl: '.swiperMiddle .swiper-button-next',
-        prevEl: '.swiperMiddle .swiper-button-prev',
-      },
-      breakpoints: {
-        320: { slidesPerView: 1, spaceBetween: 10 },
-        480: { slidesPerView: 2, spaceBetween: 10 },
-        768: { slidesPerView: 3, spaceBetween: 15 },
-        992: { slidesPerView: 4, spaceBetween: 20 },
-        1400: { slidesPerView: 5, spaceBetween: 0 },
-      },
-    });
+  if (swiperMiddle) {
+    swiperMiddle.destroy(); // Destroy existing instance
+    swiperMiddle = null; // Reset the instance
   }
+  swiperMiddle = new Swiper('.swiperMiddle', {
+    direction: 'horizontal',
+    slidesPerView: 5,
+    loop: true,
+    speed: 1000,
+    slidesPerGroup: 1,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: '.swiperMiddle .swiper-button-next',
+      prevEl: '.swiperMiddle .swiper-button-prev',
+    },
+    breakpoints: {
+      320: { slidesPerView: 1, spaceBetween: 10 },
+      480: { slidesPerView: 2, spaceBetween: 10 },
+      768: { slidesPerView: 3, spaceBetween: 15 },
+      992: { slidesPerView: 4, spaceBetween: 20 },
+      1400: { slidesPerView: 5, spaceBetween: 0 },
+    },
+  });
 }
 
+// Function to initialize Swiper for Asia
 function initializeSwiperAsia() {
-  if (!swiperAsia) {
-    swiperAsia = new Swiper('.swiperAsia', {
-      direction: 'horizontal',
-      slidesPerView: 5,
-      loop: true,
-      speed: 1000,
-      slidesPerGroup: 1,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: true,
-      },
-      navigation: {
-        nextEl: '.swiperAsia .swiper-button-next',
-        prevEl: '.swiperAsia .swiper-button-prev',
-      },
-      breakpoints: {
-        320: { slidesPerView: 1, spaceBetween: 10 },
-        480: { slidesPerView: 2, spaceBetween: 10 },
-        768: { slidesPerView: 3, spaceBetween: 15 },
-        992: { slidesPerView: 4, spaceBetween: 20 },
-        1400: { slidesPerView: 5, spaceBetween: 0 },
-      },
-    });
+  if (swiperAsia) {
+    swiperAsia.destroy(); // Destroy existing instance
+    swiperAsia = null; // Reset the instance
   }
+  swiperAsia = new Swiper('.swiperAsia', {
+    direction: 'horizontal',
+    slidesPerView: 5,
+    loop: true,
+    speed: 1000,
+    slidesPerGroup: 1,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: '.swiperAsia .swiper-button-next',
+      prevEl: '.swiperAsia .swiper-button-prev',
+    },
+    breakpoints: {
+      320: { slidesPerView: 1, spaceBetween: 10 },
+      480: { slidesPerView: 2, spaceBetween: 10 },
+      768: { slidesPerView: 3, spaceBetween: 15 },
+      992: { slidesPerView: 4, spaceBetween: 20 },
+      1400: { slidesPerView: 5, spaceBetween: 0 },
+    },
+  });
 }
 
 // Hide all sliders initially
@@ -90,10 +96,8 @@ function showSlider(target, sliderToShow) {
     // Initialize Swiper if the slider is displayed
     if (sliderToShow === ".asia-slider") {
       initializeSwiperAsia(); // Initialize Asia Swiper
-      swiperAsia.update(); // Update Asia Swiper
     } else if (sliderToShow === ".middle-east-slider") {
       initializeSwiperMiddle(); // Initialize Middle East Swiper
-      swiperMiddle.update(); // Update Middle East Swiper
     }
   } else {
     console.error(`Slider ${sliderToShow} not found!`);
