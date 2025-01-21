@@ -1,49 +1,59 @@
-// Initialize Swiper instances
-const swiperMiddle = new Swiper('.swiperMiddle', {
-  direction: 'horizontal',
-  slidesPerView: 5,
-  loop: true,
-  speed: 1000,
-  slidesPerGroup: 1,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: true,
-  },
-  navigation: {
-    nextEl: '.swiperMiddle .swiper-button-next',
-    prevEl: '.swiperMiddle .swiper-button-prev',
-  },
-  breakpoints: {
-    320: { slidesPerView: 1, spaceBetween: 10 },
-    480: { slidesPerView: 2, spaceBetween: 10 },
-    768: { slidesPerView: 3, spaceBetween: 15 },
-    992: { slidesPerView: 4, spaceBetween: 20 },
-    1400: { slidesPerView: 5, spaceBetween: 0 },
-  },
-});
+// Initialize Swiper instances dynamically
+let swiperMiddle, swiperAsia;
 
-const swiperAsia = new Swiper('.swiperAsia', {
-  direction: 'horizontal',
-  slidesPerView: 5,
-  loop: true,
-  speed: 1000,
-  slidesPerGroup: 1,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: true,
-  },
-  navigation: {
-    nextEl: '.swiperAsia .swiper-button-next',
-    prevEl: '.swiperAsia .swiper-button-prev',
-  },
-  breakpoints: {
-    320: { slidesPerView: 1, spaceBetween: 10 },
-    480: { slidesPerView: 2, spaceBetween: 10 },
-    768: { slidesPerView: 3, spaceBetween: 15 },
-    992: { slidesPerView: 4, spaceBetween: 20 },
-    1400: { slidesPerView: 5, spaceBetween: 0 },
-  },
-});
+function initializeSwiperMiddle() {
+  if (!swiperMiddle) {
+    swiperMiddle = new Swiper('.swiperMiddle', {
+      direction: 'horizontal',
+      slidesPerView: 5,
+      loop: true,
+      speed: 1000,
+      slidesPerGroup: 1,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: true,
+      },
+      navigation: {
+        nextEl: '.swiperMiddle .swiper-button-next',
+        prevEl: '.swiperMiddle .swiper-button-prev',
+      },
+      breakpoints: {
+        320: { slidesPerView: 1, spaceBetween: 10 },
+        480: { slidesPerView: 2, spaceBetween: 10 },
+        768: { slidesPerView: 3, spaceBetween: 15 },
+        992: { slidesPerView: 4, spaceBetween: 20 },
+        1400: { slidesPerView: 5, spaceBetween: 0 },
+      },
+    });
+  }
+}
+
+function initializeSwiperAsia() {
+  if (!swiperAsia) {
+    swiperAsia = new Swiper('.swiperAsia', {
+      direction: 'horizontal',
+      slidesPerView: 5,
+      loop: true,
+      speed: 1000,
+      slidesPerGroup: 1,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: true,
+      },
+      navigation: {
+        nextEl: '.swiperAsia .swiper-button-next',
+        prevEl: '.swiperAsia .swiper-button-prev',
+      },
+      breakpoints: {
+        320: { slidesPerView: 1, spaceBetween: 10 },
+        480: { slidesPerView: 2, spaceBetween: 10 },
+        768: { slidesPerView: 3, spaceBetween: 15 },
+        992: { slidesPerView: 4, spaceBetween: 20 },
+        1400: { slidesPerView: 5, spaceBetween: 0 },
+      },
+    });
+  }
+}
 
 // Hide all sliders initially
 document.querySelector(".africa-slider").style.display = "none";
@@ -75,12 +85,14 @@ function showSlider(target, sliderToShow) {
   const sliderElement = document.querySelector(sliderToShow);
   if (sliderElement) {
     sliderElement.style.display = "block";
-    sliderElement.classList.add("active"); // Corrected this line
+    sliderElement.classList.add("active");
 
-    // Update the corresponding Swiper instance
+    // Initialize Swiper if the slider is displayed
     if (sliderToShow === ".asia-slider") {
+      initializeSwiperAsia(); // Initialize Asia Swiper
       swiperAsia.update(); // Update Asia Swiper
     } else if (sliderToShow === ".middle-east-slider") {
+      initializeSwiperMiddle(); // Initialize Middle East Swiper
       swiperMiddle.update(); // Update Middle East Swiper
     }
   } else {
