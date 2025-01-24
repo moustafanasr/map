@@ -64,6 +64,7 @@ function initializeSwiperAsia() {
 // Hide all sliders initially
 document.querySelector(".africa-slider").style.display = "none";
 document.querySelector(".america-slider").style.display = "none";
+document.querySelector(".america-south-slider").style.display = "none";
 document.querySelector(".asia-slider").style.display = "none";
 document.querySelector(".europ-slider").style.display = "none";
 document.querySelector(".middle-east-slider").style.display = "none";
@@ -72,6 +73,7 @@ function showSlider(target, sliderToShow) {
   const sliders = [
     ".africa-slider",
     ".america-slider",
+    ".america-south-slider",
     ".asia-slider",
     ".europ-slider",
     ".middle-east-slider"
@@ -112,7 +114,7 @@ function showSlider(target, sliderToShow) {
   }
 
   // Remove active class from all buttons
-  document.querySelectorAll("#africa, #america, #asia, #europe, #middleeast").forEach(elem => {
+  document.querySelectorAll("#africa, #america, #america-south, #asia, #europe, #middleeast").forEach(elem => {
     elem.classList.remove("active");
   });
 
@@ -127,6 +129,9 @@ document.querySelector("#africa").addEventListener("mouseover", function () {
 
 document.querySelector("#america").addEventListener("mouseover", function () {
   showSlider(this, ".america-slider");
+});
+document.querySelector("#america-south").addEventListener("mouseover", function () {
+  showSlider(this, ".america-south-slider");
 });
 
 document.querySelector("#asia").addEventListener("mouseover", function () {

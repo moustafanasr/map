@@ -364,19 +364,7 @@ input:focus,
 .interactive-map .interactive-map-content #america:hover #united-states,
 .interactive-map .interactive-map-content #america:hover #mexico,
 .interactive-map .interactive-map-content #america:hover #canada,
-.interactive-map .interactive-map-content #america:hover #argentina,
-.interactive-map .interactive-map-content #america:hover #bolivia,
-.interactive-map .interactive-map-content #america:hover #brazil,
-.interactive-map .interactive-map-content #america:hover #chile,
-.interactive-map .interactive-map-content #america:hover #colombia,
-.interactive-map .interactive-map-content #america:hover #ecuador,
-.interactive-map .interactive-map-content #america:hover #guyana,
-.interactive-map .interactive-map-content #america:hover #peru,
-.interactive-map .interactive-map-content #america:hover #paraguay,
-.interactive-map .interactive-map-content #america:hover #suriname,
-.interactive-map .interactive-map-content #america:hover #uruguay,
-.interactive-map .interactive-map-content #america:hover #venezuela,
-.interactive-map .interactive-map-content #america:hover #french-guiana,
+
 .interactive-map .interactive-map-content #america:hover #costa-rica,
 .interactive-map .interactive-map-content #america:hover #cuba,
 .interactive-map .interactive-map-content #america:hover #dominican,
@@ -391,19 +379,7 @@ input:focus,
 .interactive-map .interactive-map-content #america.active #united-states,
 .interactive-map .interactive-map-content #america.active #mexico,
 .interactive-map .interactive-map-content #america.active #canada,
-.interactive-map .interactive-map-content #america.active #argentina,
-.interactive-map .interactive-map-content #america.active #bolivia,
-.interactive-map .interactive-map-content #america.active #brazil,
-.interactive-map .interactive-map-content #america.active #chile,
-.interactive-map .interactive-map-content #america.active #colombia,
-.interactive-map .interactive-map-content #america.active #ecuador,
-.interactive-map .interactive-map-content #america.active #guyana,
-.interactive-map .interactive-map-content #america.active #peru,
-.interactive-map .interactive-map-content #america.active #paraguay,
-.interactive-map .interactive-map-content #america.active #suriname,
-.interactive-map .interactive-map-content #america.active #uruguay,
-.interactive-map .interactive-map-content #america.active #venezuela,
-.interactive-map .interactive-map-content #america.active #french-guiana,
+
 .interactive-map .interactive-map-content #america.active #costa-rica,
 .interactive-map .interactive-map-content #america.active #cuba,
 .interactive-map .interactive-map-content #america.active #dominican,
@@ -419,6 +395,39 @@ input:focus,
   -webkit-animation: fill 2s forwards;
   cursor: pointer;
 }
+.interactive-map .interactive-map-content #america-south:hover #argentina,
+.interactive-map .interactive-map-content #america-south:hover #bolivia,
+.interactive-map .interactive-map-content #america-south:hover #brazil,
+.interactive-map .interactive-map-content #america-south:hover #chile,
+.interactive-map .interactive-map-content #america-south:hover #colombia,
+.interactive-map .interactive-map-content #america-south:hover #ecuador,
+.interactive-map .interactive-map-content #america-south:hover #guyana,
+.interactive-map .interactive-map-content #america-south:hover #peru,
+.interactive-map .interactive-map-content #america-south:hover #paraguay,
+.interactive-map .interactive-map-content #america-south:hover #suriname,
+.interactive-map .interactive-map-content #america-south:hover #uruguay,
+.interactive-map .interactive-map-content #america-south:hover #venezuela,
+.interactive-map .interactive-map-content #america-south:hover #french-guiana,
+
+.interactive-map .interactive-map-content #america-south.active #argentina,
+.interactive-map .interactive-map-content #america-south.active #bolivia,
+.interactive-map .interactive-map-content #america-south.active #brazil,
+.interactive-map .interactive-map-content #america-south.active #chile,
+.interactive-map .interactive-map-content #america-south.active #colombia,
+.interactive-map .interactive-map-content #america-south.active #ecuador,
+.interactive-map .interactive-map-content #america-south.active #guyana,
+.interactive-map .interactive-map-content #america-south.active #peru,
+.interactive-map .interactive-map-content #america-south.active #paraguay,
+.interactive-map .interactive-map-content #america-south.active #suriname,
+.interactive-map .interactive-map-content #america-south.active #uruguay,
+.interactive-map .interactive-map-content #america-south.active #venezuela,
+.interactive-map .interactive-map-content #america-south.active #french-guiana{
+  animation: fill 2s forwards;
+  -webkit-animation: fill 2s forwards;
+  cursor: pointer;
+}
+
+
 
 .interactive-map .interactive-map-content #asia:hover #afghanistan,
 .interactive-map .interactive-map-content #asia:hover #china,
@@ -550,11 +559,11 @@ input:focus,
 
 @keyframes fill {
   0% {
-    fill: #f5d7ab;
+    fill: #e5e5e5;
   }
 
   100% {
-    fill: #2D8DBC;
+    fill: #ff6700;
   }
 }
 
