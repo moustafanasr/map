@@ -356,8 +356,8 @@ input:focus,
 .interactive-map .interactive-map-content #africa.active #wsahara,
 .interactive-map .interactive-map-content #africa.active #swaziland,
 .interactive-map .interactive-map-content #africa.active #togo {
-  animation: fill 2s forwards;
-  -webkit-animation: fill 2s forwards;
+  animation: fill-Africa 2s forwards;
+  -webkit-animation: fill-Africa 2s forwards;
   cursor: pointer;
 }
 
@@ -391,8 +391,8 @@ input:focus,
 .interactive-map .interactive-map-content #america.active #panama,
 .interactive-map .interactive-map-content #america.active #el-salvador,
 .interactive-map .interactive-map-content #america.active #bahamas {
-  animation: fill 2s forwards;
-  -webkit-animation: fill 2s forwards;
+  animation: fill-North-America 2s forwards;
+  -webkit-animation: fill-North-America 2s forwards;
   cursor: pointer;
 }
 .interactive-map .interactive-map-content #america-south:hover #argentina,
@@ -422,8 +422,8 @@ input:focus,
 .interactive-map .interactive-map-content #america-south.active #uruguay,
 .interactive-map .interactive-map-content #america-south.active #venezuela,
 .interactive-map .interactive-map-content #america-south.active #french-guiana{
-  animation: fill 2s forwards;
-  -webkit-animation: fill 2s forwards;
+  animation: fill-South-America 2s forwards;
+  -webkit-animation: fill-South-America 2s forwards;
   cursor: pointer;
 }
 
@@ -445,8 +445,8 @@ input:focus,
 .interactive-map .interactive-map-content #asia.active #pakistan,
 .interactive-map .interactive-map-content #asia.active #thailand,
 .interactive-map .interactive-map-content #asia.active #vietnam {
-  animation: fill 2s forwards;
-  -webkit-animation: fill 2s forwards;
+  animation: fill-Far-East 2s forwards;
+  -webkit-animation: fill-Far-East 2s forwards;
   cursor: pointer;
 }
 
@@ -527,8 +527,8 @@ input:focus,
 .interactive-map .interactive-map-content #europe.active #hungary,
 .interactive-map .interactive-map-content #europe.active #luxembourg,
 .interactive-map .interactive-map-content #europe.active #netherlands {
-  animation: fill 2s forwards;
-  -webkit-animation: fill 2s forwards;
+  animation: fill-Europe 2s forwards;
+  -webkit-animation: fill-Europe 2s forwards;
   cursor: pointer;
 }
 
@@ -552,18 +552,63 @@ input:focus,
 .interactive-map .interactive-map-content #middleeast.active #saudi-arabia,
 .interactive-map .interactive-map-content #middleeast.active #oman,
 .interactive-map .interactive-map-content #middleeast.active #iraq {
-  animation: fill 2s forwards;
-  -webkit-animation: fill 2s forwards;
+  animation: fill-middle-east 2s forwards;
+  -webkit-animation: fill-middle-east 2s forwards;
   cursor: pointer;
 }
 
-@keyframes fill {
+@keyframes fill-middle-east {
   0% {
     fill: #e5e5e5;
   }
 
   100% {
-    fill: #ff6700;
+    fill: #009900;
+  }
+}
+@keyframes fill-Europe {
+  0% {
+    fill: #e5e5e5;
+  }
+
+  100% {
+    fill: #FFC700;
+  }
+}
+@keyframes fill-Far-East {
+  0% {
+    fill: #e5e5e5;
+  }
+
+  100% {
+    fill: #F96714;
+  }
+}
+@keyframes fill-Africa {
+  0% {
+    fill: #e5e5e5;
+  }
+
+  100% {
+    fill: #A020F0;
+  }
+}
+@keyframes fill-South-America {
+  0% {
+    fill: #e5e5e5;
+  }
+
+  100% {
+    fill: #EF266F;
+  }
+}
+@keyframes fill-North-America {
+  0% {
+    fill: #e5e5e5;
+  }
+
+  100% {
+    fill: #24D2ED;
   }
 }
 
