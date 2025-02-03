@@ -37,6 +37,7 @@
 ::before {
   box-sizing: border-box;
 }
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -12052,7 +12053,7 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] {
   opacity: 0.75;
   color: #000;
 }
-.slick-active.active .slider li a{
+.slick-active.active .slider li a {
   animation: opacity-element 2s forwards;
   -webkit-animation: opacity-element 2s forwards;
 }
