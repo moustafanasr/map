@@ -17,6 +17,10 @@ function initializeSwiperAfrica() {
       delay: 2000,
       disableOnInteraction: true
     },
+    navigation: {
+      nextEl: ".swiperAfrica .swiper-button-next",
+      prevEl: ".swiperAfrica .swiper-button-prev"
+    },
     breakpoints: {
       500: { slidesPerView: 3, spaceBetween: 10 }
     }
@@ -38,6 +42,10 @@ function initializeSwiperEurope() {
     autoplay: {
       delay: 2000,
       disableOnInteraction: true
+    },
+    navigation: {
+      nextEl: ".swiperEurop .swiper-button-next",
+      prevEl: ".swiperEurop .swiper-button-prev"
     },
     breakpoints: {
       500: { slidesPerView: 3, spaceBetween: 10 }
