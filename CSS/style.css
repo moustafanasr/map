@@ -1111,7 +1111,7 @@ input:focus,
 
 }
 
-@media only screen and (min-width: 413px) and (max-width: 768px) {
+@media only screen and (min-width: 451px) and (max-width: 768px) {
 
   .swiperAfrica .swiper-button,
   .swiperEurop .swiper-button {
@@ -1126,6 +1126,18 @@ input:focus,
 
   .interactive-map .pavilion-list .swiper-button::after {
     font-size: 10px;
+    font-weight: 900;
+  }
+
+  .interactive-map .pavilion-list .swiper-button {
+    top: 54%;
+    width: 9%;
+    height: 26%;
+    text-align: center;
+  }
+
+  .interactive-map .pavilion-list .swiper-button::after {
+    font-size: 15px;
     font-weight: 900;
   }
 
@@ -1241,16 +1253,17 @@ input:focus,
 
 }
 
-@media only screen and (min-width: 361px) and (max-width: 412px) {
+@media only screen and (min-width: 401px) and (max-width: 450px) {
 
   .interactive-map .pavilion-list .swiper-button {
-    top: 43%;
-    width: 5%;
-    height: 15%;
+    top: 54%;
+    width: 9%;
+    height: 26%;
+    text-align: center;
   }
 
   .interactive-map .pavilion-list .swiper-button::after {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 900;
   }
 
@@ -1355,13 +1368,443 @@ input:focus,
   }
 
   .img13 {
+    position: absolute;
     width: 30px;
     height: 30px;
-    transform: translate(-60px, -150px);
-    -webkit-transform: translate(-60px, -150px);
-    -moz-transform: translate(-60px, -150px);
-    -ms-transform: translate(-60px, -150px);
-    -o-transform: translate(-60px, -150px);
+    transform: translate(-50px, -150px);
+    -webkit-transform: translate(-50px, -150px);
+    -moz-transform: translate(-50px, -150px);
+    -ms-transform: translate(-50px, -150px);
+    -o-transform: translate(-50px, -150px);
+  }
+
+
+
+
+}
+
+
+@media only screen and (min-width: 361px) and (max-width: 400px) {
+
+  .interactive-map .pavilion-list .swiper-button {
+    top: 53%;
+    width: 5%;
+    height: 15%;
+  }
+
+  .interactive-map .pavilion-list .swiper-button::after {
+    font-size: 10px;
+    font-weight: 900;
+  }
+
+  .img3 {
+    width: 30px;
+    height: 30px;
+    transform: translate(90px, -80px);
+    -webkit-transform: translate(90px, -80px);
+    -moz-transform: translate(90px, -80px);
+    -ms-transform: translate(90px, -80px);
+    -o-transform: translate(90px, -80px);
+  }
+
+  .img4 {
+    width: 30px;
+    height: 30px;
+    transform: translate(30px, -50px);
+    -webkit-transform: translate(30px, -50px);
+    -moz-transform: translate(30px, -50px);
+    -ms-transform: translate(30px, -50px);
+    -o-transform: translate(30px, -50px);
+  }
+
+  .img5 {
+    width: 30px;
+    height: 30px;
+    transform: translate(70px, -160px);
+    -webkit-transform: translate(70px, -160px);
+    -moz-transform: translate(70px, -160px);
+    -ms-transform: translate(70px, -160px);
+    -o-transform: translate(70px, -160px);
+  }
+
+  .img6 {
+    width: 30px;
+    height: 30px;
+    transform: translate(60px, -150px);
+    -webkit-transform: translate(60px, -150px);
+    -moz-transform: translate(60px, -150px);
+    -ms-transform: translate(60px, -150px);
+    -o-transform: translate(60px, -150px);
+  }
+
+  .img7 {
+    width: 30px;
+    height: 30px;
+    transform: translate(50px, -170px);
+    -webkit-transform: translate(50px, -170px);
+    -moz-transform: translate(50px, -170px);
+    -ms-transform: translate(50px, -170px);
+    -o-transform: translate(50px, -170px);
+  }
+
+  .img8 {
+    width: 30px;
+    height: 30px;
+    transform: translate(-10px, -120px);
+    -webkit-transform: translate(-10px, -120px);
+    -moz-transform: translate(-10px, -120px);
+    -ms-transform: translate(-10px, -120px);
+    -o-transform: translate(-10px, -120px);
+  }
+
+  .img9 {
+    width: 30px;
+    height: 30px;
+    transform: translate(-20px, -80px);
+    -webkit-transform: translate(-20px, -80px);
+    -moz-transform: translate(-20px, -80px);
+    -ms-transform: translate(-20px, -80px);
+    -o-transform: translate(-20px, -80px);
+  }
+
+  .img10 {
+    width: 30px;
+    height: 30px;
+    transform: translate(-80px, -90px);
+    -webkit-transform: translate(-80px, -90px);
+    -moz-transform: translate(-80px, -90px);
+    -ms-transform: translate(-80px, -90px);
+    -o-transform: translate(-80px, -90px);
+  }
+
+  .img11 {
+    width: 30px;
+    height: 30px;
+    transform: translate(-90px, -130px);
+    -webkit-transform: translate(-90px, -130px);
+    -moz-transform: translate(-90px, -130px);
+    -ms-transform: translate(-90px, -130px);
+    -o-transform: translate(-90px, -130px);
+  }
+
+  .img12 {
+    width: 30px;
+    height: 30px;
+    transform: translate(220px, -160px);
+    -webkit-transform: translate(220px, -160px);
+    -moz-transform: translate(220px, -160px);
+    -ms-transform: translate(220px, -160px);
+    -o-transform: translate(220px, -160px);
+  }
+
+  .img13 {
+    width: 30px;
+    height: 30px;
+    transform: translate(220px, -170px);
+    -webkit-transform: translate(220px, -170px);
+    -moz-transform: translate(220px, -170px);
+    -ms-transform: translate(220px, -170px);
+    -o-transform: translate(220px, -170px);
+  }
+
+
+
+
+}
+
+@media only screen and (min-width: 370px) and (max-width: 400px) {
+  .interactive-map .pavilion-list .swiper-button {
+    top: 54%;
+    width: 9%;
+    height: 26%;
+    text-align: center;
+  }
+
+  .interactive-map .pavilion-list .swiper-button::after {
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  .img12 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translate(-80px, -130px);
+    -webkit-transform: translate(-80px, -130px);
+    -moz-transform: translate(-80px, -130px);
+    -ms-transform: translate(-80px, -130px);
+    -o-transform: translate(-80px, -130px);
+  }
+
+  .img13 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translate(-40px, -140px);
+    -webkit-transform: translate(-40px, -140px);
+    -moz-transform: translate(-40px, -140px);
+    -ms-transform: translate(-40px, -140px);
+    -o-transform: translate(-40px, -140px);
+  }
+
+
+
+
+}
+
+@media only screen and (min-width: 380px) and (max-width: 400px) {
+  .interactive-map .pavilion-list .swiper-button {
+    top: 54%;
+    width: 9%;
+    height: 26%;
+    text-align: center;
+  }
+
+  .interactive-map .pavilion-list .swiper-button::after {
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  .img3 {
+    width: 30px;
+    height: 30px;
+    transform: translate(90px, -80px);
+    -webkit-transform: translate(90px, -80px);
+    -moz-transform: translate(90px, -80px);
+    -ms-transform: translate(90px, -80px);
+    -o-transform: translate(90px, -80px);
+  }
+
+  .img4 {
+    width: 30px;
+    height: 30px;
+    transform: translate(30px, -50px);
+    -webkit-transform: translate(30px, -50px);
+    -moz-transform: translate(30px, -50px);
+    -ms-transform: translate(30px, -50px);
+    -o-transform: translate(30px, -50px);
+  }
+
+  .img5 {
+    width: 30px;
+    height: 30px;
+    transform: translate(70px, -160px);
+    -webkit-transform: translate(70px, -160px);
+    -moz-transform: translate(70px, -160px);
+    -ms-transform: translate(70px, -160px);
+    -o-transform: translate(70px, -160px);
+  }
+
+  .img6 {
+    width: 30px;
+    height: 30px;
+    transform: translate(60px, -150px);
+    -webkit-transform: translate(60px, -150px);
+    -moz-transform: translate(60px, -150px);
+    -ms-transform: translate(60px, -150px);
+    -o-transform: translate(60px, -150px);
+  }
+
+  .img7 {
+    width: 30px;
+    height: 30px;
+    transform: translate(70px, -170px);
+    -webkit-transform: translate(70px, -170px);
+    -moz-transform: translate(70px, -170px);
+    -ms-transform: translate(70px, -170px);
+    -o-transform: translate(70px, -170px);
+  }
+
+  .img8 {
+    width: 30px;
+    height: 30px;
+    transform: translate(0px, -120px);
+    -webkit-transform: translate(0px, -120px);
+    -moz-transform: translate(0px, -120px);
+    -ms-transform: translate(0px, -120px);
+    -o-transform: translate(0px, -120px);
+  }
+
+  .img9 {
+    width: 30px;
+    height: 30px;
+    transform: translate(-10px, -80px);
+    -webkit-transform: translate(-10px, -80px);
+    -moz-transform: translate(-10px, -80px);
+    -ms-transform: translate(-10px, -80px);
+    -o-transform: translate(-10px, -80px);
+  }
+
+  .img10 {
+    width: 30px;
+    height: 30px;
+    transform: translate(-80px, -90px);
+    -webkit-transform: translate(-80px, -90px);
+    -moz-transform: translate(-80px, -90px);
+    -ms-transform: translate(-80px, -90px);
+    -o-transform: translate(-80px, -90px);
+  }
+
+  .img11 {
+    width: 30px;
+    height: 30px;
+    transform: translate(-80px, -130px);
+    -webkit-transform: translate(-80px, -130px);
+    -moz-transform: translate(-80px, -130px);
+    -ms-transform: translate(-80px, -130px);
+    -o-transform: translate(-80px, -130px);
+  }
+
+  .img12 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translate(-80px, -130px);
+    -webkit-transform: translate(-80px, -130px);
+    -moz-transform: translate(-80px, -130px);
+    -ms-transform: translate(-80px, -130px);
+    -o-transform: translate(-80px, -130px);
+  }
+
+  .img13 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translate(-40px, -140px);
+    -webkit-transform: translate(-40px, -140px);
+    -moz-transform: translate(-40px, -140px);
+    -ms-transform: translate(-40px, -140px);
+    -o-transform: translate(-40px, -140px);
+  }
+
+
+
+
+}
+
+@media only screen and (min-width: 390px) and (max-width: 400px) {
+  .interactive-map .pavilion-list .swiper-button {
+    top: 54%;
+    width: 9%;
+    height: 26%;
+    text-align: center;
+  }
+
+  .interactive-map .pavilion-list .swiper-button::after {
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  .img3 {
+    width: 30px;
+    height: 30px;
+    transform: translate(90px, -80px);
+    -webkit-transform: translate(90px, -80px);
+    -moz-transform: translate(90px, -80px);
+    -ms-transform: translate(90px, -80px);
+    -o-transform: translate(90px, -80px);
+  }
+
+  .img4 {
+    width: 30px;
+    height: 30px;
+    transform: translate(30px, -50px);
+    -webkit-transform: translate(30px, -50px);
+    -moz-transform: translate(30px, -50px);
+    -ms-transform: translate(30px, -50px);
+    -o-transform: translate(30px, -50px);
+  }
+
+  .img5 {
+    width: 30px;
+    height: 30px;
+    transform: translate(70px, -160px);
+    -webkit-transform: translate(70px, -160px);
+    -moz-transform: translate(70px, -160px);
+    -ms-transform: translate(70px, -160px);
+    -o-transform: translate(70px, -160px);
+  }
+
+  .img6 {
+    width: 30px;
+    height: 30px;
+    transform: translate(80px, -160px);
+    -webkit-transform: translate(80px, -160px);
+    -moz-transform: translate(80px, -160px);
+    -ms-transform: translate(80px, -160px);
+    -o-transform: translate(80px, -160px);
+  }
+
+  .img7 {
+    width: 30px;
+    height: 30px;
+    transform: translate(70px, -170px);
+    -webkit-transform: translate(70px, -170px);
+    -moz-transform: translate(70px, -170px);
+    -ms-transform: translate(70px, -170px);
+    -o-transform: translate(70px, -170px);
+  }
+
+  .img8 {
+    width: 30px;
+    height: 30px;
+    transform: translate(0px, -130px);
+    -webkit-transform: translate(0px, -130px);
+    -moz-transform: translate(0px, -130px);
+    -ms-transform: translate(0px, -130px);
+    -o-transform: translate(0px, -130px);
+  }
+
+  .img9 {
+    width: 30px;
+    height: 30px;
+    transform: translate(-10px, -90px);
+    -webkit-transform: translate(-10px, -90px);
+    -moz-transform: translate(-10px, -90px);
+    -ms-transform: translate(-10px, -90px);
+    -o-transform: translate(-10px, -90px);
+  }
+
+  .img10 {
+    width: 30px;
+    height: 30px;
+    transform: translate(-80px, -90px);
+    -webkit-transform: translate(-80px, -90px);
+    -moz-transform: translate(-80px, -90px);
+    -ms-transform: translate(-80px, -90px);
+    -o-transform: translate(-80px, -90px);
+  }
+
+  .img11 {
+    width: 30px;
+    height: 30px;
+    transform: translate(-70px, -130px);
+    -webkit-transform: translate(-70px, -130px);
+    -moz-transform: translate(-70px, -130px);
+    -ms-transform: translate(-70px, -130px);
+    -o-transform: translate(-70px, -130px);
+  }
+
+  .img12 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translate(-60px, -140px);
+    -webkit-transform: translate(-60px, -140px);
+    -moz-transform: translate(-60px, -140px);
+    -ms-transform: translate(-60px, -140px);
+    -o-transform: translate(-60px, -140px);
+  }
+
+  .img13 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translate(-20px, -140px);
+    -webkit-transform: translate(-20px, -140px);
+    -moz-transform: translate(-20px, -140px);
+    -ms-transform: translate(-20px, -140px);
+    -o-transform: translate(-20px, -140px);
   }
 
 
@@ -1370,6 +1813,7 @@ input:focus,
 }
 
 @media only screen and (max-width: 360px) {
+
   .img3 {
     width: 30px;
     height: 30px;
@@ -1482,13 +1926,14 @@ input:focus,
 
 
   .interactive-map .pavilion-list .swiper-button {
-    top: 43%;
-    width: 6%;
-    height: 15%;
+    top: 54%;
+    width: 9%;
+    height: 26%;
+    text-align: center;
   }
 
   .interactive-map .pavilion-list .swiper-button::after {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 900;
   }
 
